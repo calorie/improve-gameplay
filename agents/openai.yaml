@@ -1,0 +1,14 @@
+interface:
+  display_name: ゲームの面白さを磨く
+  short_description: 面白さ・物語・全体のつながりを評価し、証拠に基づいて改善を反復する
+  default_prompt: Use $improve-gameplay to evaluate and improve this game within the
+    agreed work budget.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

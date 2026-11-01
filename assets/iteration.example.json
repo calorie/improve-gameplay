@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "contract": {
+    "project": "example-only",
+    "audience": "戦術的な判断を楽しむプレイヤー",
+    "goals": ["敵の意図を読み、危険を引き受けて仲間を助ける楽しさ"],
+    "quality_floor": ["予告・行為・接触・結果・人物の反応が連続して読み取れる"],
+    "intentional_ambiguity": ["敵の本当の目的はまだ明かさない"]
+  },
+  "build": "example-b14",
+  "boundary": "序章の開始から救出直後まで。後続章への一般化はしない",
+  "limits": {"minutes": 30, "iterations": 3, "stall": 2},
+  "spent": {"minutes": 0, "iterations": 0},
+  "evidence": [
+    {"id": "E1", "build": "example-b14", "kind": "runtime", "scopes": ["moment", "sequence"], "source": "架空の説明用ログ。実証ではない", "observation": "通常攻撃のみで突破し、救出時機を変えても結果は同じ"}
+  ],
+  "assessments": [
+    {"aspect": "enjoyment", "scope": "moment", "status": "unknown", "claim": "判断の手応えが乏しい可能性。人間の楽しさは未確認", "evidence": ["E1"]},
+    {"aspect": "enjoyment", "scope": "sequence", "status": "unknown", "claim": "反復が単調になる可能性。人間の楽しさは未確認", "evidence": ["E1"]},
+    {"aspect": "enjoyment", "scope": "whole", "status": "unknown", "claim": "区間全体の緩急と継続意欲は未確認", "evidence": []},
+    {"aspect": "comprehension", "scope": "sequence", "status": "unknown", "claim": "初見の理解は未確認", "evidence": []},
+    {"aspect": "coherence", "scope": "whole", "status": "unknown", "claim": "開始から救出後までの情報と動機の接続は未確認", "evidence": []},
+    {"aspect": "expression", "scope": "sequence", "status": "unknown", "claim": "連続した画面と音の確認が必要", "evidence": []},
+    {"aspect": "function", "scope": "sequence", "status": "unknown", "claim": "全進行経路の動作は未確認", "evidence": []}
+  ],
+  "findings": [
+    {"id": "F1", "severity": "core", "status": "open", "aspect": "enjoyment", "observation": "意図を読んでも救出結果が変わらない", "hypothesis": "行動の代償が結果と反応に届いていない", "evidence": ["E1"]}
+  ],
+  "history": [],
+  "comparison": null,
+  "decision": "iterate",
+  "next": {
+    "kind": "experiment", "addresses": ["F1"], "hypothesis_id": "H-rescue-tradeoff",
+    "change": "一戦で救出と攻撃の代償を分け、直後の人物の反応まで接続する",
+    "check_function": "同じ開始状態から両方の操作を実行して結果と反応を確認する",
+    "check_fun": "予測:駆け引きが増す。初見試遊で楽しかった/退屈だった瞬間を聞き、現行版との好みと理由を比較する。人間不在なら未検証を維持する",
+    "check_regression": "記録室を飛ばした経路と前後の会話を含め、目的・動機・テンポが壊れていないか確認する",
+    "minutes": 25
+  }
+}

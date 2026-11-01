@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "record_status": "架空事例の再開・引き継ぎ記録。resume.txtの提供報告を追記したのみで、このセッションによるゲーム実行・実装・動画視聴・採用は行っていない。",
+  "evidence_policy": "原資料は前記録が保持するtactical-case.txtの架空記述と、今回読んだresume.txtの架空の追加報告。実ログ・画像・動画・試遊者へのアクセスはない。架空の実行報告を現実のruntime/human証拠へ昇格させず、追加情報もsimulationとして保持する。b14/b09/b15は事例内の識別子。前記録の証拠・履歴は変更しない。",
+  "contract": {
+    "project": "港の約束（提供された架空事例）",
+    "audience": "戦術RPG好き",
+    "goals": [
+      "敵の意図を読み、攻撃を続けるか仲間をかばうかを判断する手応え",
+      "自分の救出行動が仲間の信頼と反応につながる体験"
+    ],
+    "quality_floor": [
+      "事例で成立したとされるUI・敵・仲間の識別性と敵の予備動作の可視性を守る",
+      "救出前後の行為・結果・人物の反応の因果を追える",
+      "記録室を見逃しても救う相手と約束の必要な前提が届く"
+    ],
+    "intentional_ambiguity": []
+  },
+  "ambiguity_note": "意図した謎は資料に指定なし。幼なじみという作者設定を、ゲーム内で提示済み・プレイヤー理解済みと扱わない。",
+  "build": "b15",
+  "boundary": "序章の依頼受領から、任意の記録室を経る／飛ばす各経路、街道戦と仲間の救出、直後の礼まで。供給された6戦の反復も懸念として保持する。一戦の試作を序章全体や未提示の後続章の完成とみなさない。",
+  "limits": {
+    "minutes": 30,
+    "iterations": 3,
+    "stall": 2
+  },
+  "spent": {
+    "minutes": 30,
+    "iterations": 1
+  },
+  "budget_note": "resume.txtの架空事例における実作業報告30分・1実験を累積実績として記録。これは本セッションで実測したゲーム作業時間・実験数ではない。予算追加はなく、上限30分に到達したため新作業を開始しない。記録作成時間やトークン実績をゲーム実験時間として捏造しない。",
+  "evidence": [
+    {
+      "id": "E-b14-play-summary",
+      "build": "b14",
+      "kind": "simulation",
+      "scopes": [
+        "moment",
+        "sequence"
+      ],
+      "source": "tactical-case.txt 第3段落「現行ビルドb14の操作ログ」についての架空の文章。実ログ未閲覧。",
+      "observation": "事例内では6戦を通常攻撃の繰り返しで勝利。防御や救出のタイミングを変えても勝敗・被害・仲間の反応は同じ。AIが最適手順で完走したとされる。これは人間の楽しさの証拠ではない。"
+    },
+    {
+      "id": "E-b14-image-summary",
+      "build": "b14",
+      "kind": "simulation",
+      "scopes": [
+        "moment"
+      ],
+      "source": "tactical-case.txt 第3段落「b14の静止画」についての架空の文章。画像未閲覧。",
+      "observation": "UI・敵・仲間を識別でき、見栄えは以前より良いとの記述。動き、音、人間の理解・楽しさはこの記述から確認できない。"
+    },
+    {
+      "id": "E-b14-video-summary",
+      "build": "b14",
+      "kind": "simulation",
+      "scopes": [
+        "moment",
+        "sequence"
+      ],
+      "source": "tactical-case.txt 第3段落「b14の等速動画」についての架空の文章。動画・音声未視聴。",
+      "observation": "敵の予備動作は見えるが、戦闘後の仲間の台詞は選択によらず同じとされる。資料にも音は実際に確認できないと明記。"
+    },
+    {
+      "id": "E-story-summary",
+      "build": "b14",
+      "kind": "simulation",
+      "scopes": [
+        "sequence",
+        "whole"
+      ],
+      "source": "tactical-case.txt 第4段落「物語」の架空の進行・設計記述。通しプレイ未実施。",
+      "observation": "依頼→任意の記録室→街道戦→救出→『約束を守ってくれた』という礼。約束の説明は任意の記録室のみで、そこを飛ばして戦闘に進める。幼なじみは設計書上の情報であり、ゲーム内提示や初見者の理解は示されていない。"
+    },
+    {
+      "id": "E-b09-playtest-summary",
+      "build": "b09",
+      "kind": "simulation",
+      "scopes": [
+        "sequence"
+      ],
+      "source": "tactical-case.txt 第5段落「b09の初見者3人」の架空の報告。試遊記録原本なし。対象者の嗜好・観測範囲は未指定。",
+      "observation": "操作目的は説明できた。2人は戦闘が単調、1人は助ける相手が誰か不明と発言したとされる。古い版の懸念であり、b14の人間試遊ではない。"
+    },
+    {
+      "id": "E-b14-author-summary",
+      "build": "b14",
+      "kind": "simulation",
+      "scopes": [
+        "sequence"
+      ],
+      "source": "tactical-case.txt 第5段落「b14作者の感想」の架空の記述。",
+      "observation": "作者は楽しくなったと述べるが、b14の人間試遊はない。作者の感想を対象プレイヤーによる検証として扱わない。"
+    },
+    {
+      "id": "E-prior-tuning-summary",
+      "build": "unspecified-in-case",
+      "kind": "simulation",
+      "scopes": [
+        "sequence"
+      ],
+      "source": "tactical-case.txt 第5段落末尾「直近2回」の架空の報告。各ビルドID・実行記録・工数は未提示。",
+      "observation": "直近2回は通常攻撃のダメージを変えたが、最適手順と反応は変わらなかったとされる。2回とも改善なしという提供情報を保持し、数値調整の継続を選ばない。"
+    },
+    {
+      "id": "E-b15-causality-summary",
+      "build": "b15",
+      "kind": "simulation",
+      "scopes": [
+        "moment",
+        "sequence"
+      ],
+      "source": "resume.txt 第2段落「新ビルドb15」から救出直後の台詞・状態までの架空報告。提供されたとされる等速動画・操作ログの原本は未閲覧。",
+      "observation": "危険な予備動作でかばうと仲間を守れるが撃破が1手遅れ、攻撃継続なら撃破が早いが仲間が負傷する。平時のかばうには利益がなく、救出直後の台詞・状態は結果に応じて変わるとの記述。これは現実の実行確認や人間の楽しさの実証ではない。"
+    },
+    {
+      "id": "E-b15-context-summary",
+      "build": "b15",
+      "kind": "simulation",
+      "scopes": [
+        "sequence"
+      ],
+      "source": "resume.txt 第2段落「記録室を飛ばした経路でも」以降の架空の会話・進行報告。映像・操作ログは未閲覧。",
+      "observation": "記録室を飛ばした経路でも、戦闘前に相手の名前、幼なじみであること、守る約束が会話に出る。入力から進行まで通過し、前後映像に停止や矛盾は見つからなかったとされる。情報が提示されたという報告であり、初見者が理解した証拠ではない。記録室を経る経路や序章全体の確認は明示されていない。"
+    },
+    {
+      "id": "E-b15-limits-summary",
+      "build": "b15",
+      "kind": "simulation",
+      "scopes": [
+        "sequence",
+        "whole"
+      ],
+      "source": "resume.txt 第2段落末尾および第3段落の架空報告と作業制約。",
+      "observation": "残る5戦は未変更。音を確認できる録音とb15の人間試遊はない。報告上の実作業は30分・1実験で、予算追加はない。wholeは対象全体の未確認事項を記す範囲であり、全体実行を確認した意味ではない。"
+    }
+  ],
+  "assessments": [
+    {
+      "aspect": "enjoyment",
+      "scope": "moment",
+      "status": "unknown",
+      "claim": "AI予測：危険時のかばう／攻撃継続で救出結果と直後反応が変わるという報告は、救えた手応えを生む構造仮説を補強する。ただし危険時は常にかばうだけで自明、代償に魅力がない、操作負荷だけが増すなら反証。b15の人間の楽しさは未検証。",
+      "evidence": [
+        "E-b15-causality-summary"
+      ]
+    },
+    {
+      "aspect": "enjoyment",
+      "scope": "sequence",
+      "status": "unknown",
+      "claim": "代表一戦の因果の変化は報告されているが、残る5戦は未変更。6戦の単調さ、選択の反復、負傷や撃破の遅れへの好み、救出後の余韻は未検証。b09の不満とb14の反復を現在の懸念として残す。",
+      "evidence": [
+        "E-b15-causality-summary",
+        "E-b15-limits-summary",
+        "E-b14-play-summary",
+        "E-b09-playtest-summary"
+      ]
+    },
+    {
+      "aspect": "enjoyment",
+      "scope": "whole",
+      "status": "unknown",
+      "claim": "序章全体の緩急、仲間との関係への関心、継続意欲は未検証。一戦の結果分岐や入力の通過を面白さ・全体完成へ読み替えない。",
+      "evidence": [
+        "E-b15-limits-summary",
+        "E-story-summary"
+      ]
+    },
+    {
+      "aspect": "comprehension",
+      "scope": "whole",
+      "status": "unknown",
+      "claim": "b15の見逃し経路で名前・幼なじみ・約束が会話に出るという報告は前提欠落への対応を示すが、提示と理解は別。人間試遊がなく、相手・約束・選択の因果の理解や序章両経路の成立は未確認。",
+      "evidence": [
+        "E-b15-context-summary",
+        "E-b15-limits-summary",
+        "E-story-summary"
+      ]
+    },
+    {
+      "aspect": "coherence",
+      "scope": "whole",
+      "status": "unknown",
+      "claim": "報告された範囲では行為→救出結果→台詞・状態の因果と、記録室を飛ばした場合の物語前提が接続する方向へ変わったと推測する。原資料の実行証拠はなく、記録室を経る経路、残る5戦、全体のテンポは未確認。",
+      "evidence": [
+        "E-b15-causality-summary",
+        "E-b15-context-summary",
+        "E-b15-limits-summary"
+      ]
+    },
+    {
+      "aspect": "expression",
+      "scope": "sequence",
+      "status": "unknown",
+      "claim": "救出結果で台詞・状態が変わり前後映像に矛盾なしとの文章報告に限定する。映像未視聴のため芝居・間・接触・識別性・予備動作の可視性の維持は独立確認できず、音は確認可能な録音がない。",
+      "evidence": [
+        "E-b15-causality-summary",
+        "E-b15-context-summary",
+        "E-b15-limits-summary",
+        "E-b14-image-summary",
+        "E-b14-video-summary"
+      ]
+    },
+    {
+      "aspect": "function",
+      "scope": "sequence",
+      "status": "unknown",
+      "claim": "架空報告では入力から進行まで通過し、危険時のかばう／攻撃継続、平時のかばう、結果に対応する直後反応が成立したとされる。実ログや映像を閲覧・ゲームを実行したわけではないため実証合格にはせず、復帰・全経路・残る5戦の検証へ広げない。",
+      "evidence": [
+        "E-b15-causality-summary",
+        "E-b15-context-summary",
+        "E-b15-limits-summary"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F-rescue-causality",
+      "severity": "core",
+      "status": "open",
+      "aspect": "enjoyment",
+      "observation": "提供事例では防御・救出のタイミングを変えても勝敗・被害・仲間の反応が変わらず、6戦が同じ通常攻撃で終わる。",
+      "hypothesis": "b15の追加報告は、通常攻撃の数値ではなく行為の代償→救出結果→反応の因果構造を変える仮説を代表一戦で補強する。ただし危険時のかばうが自明な一択になる可能性と、未変更の5戦の反復が残るため、核の魅力の成立は未検証。",
+      "evidence": [
+        "E-b14-play-summary",
+        "E-b14-video-summary",
+        "E-prior-tuning-summary",
+        "E-b15-causality-summary",
+        "E-b15-limits-summary"
+      ],
+      "current_status_note": "元のb14観測を保存。事例内の代表一戦には対応の報告があるが、実行証拠・人間の楽しさ・残り5戦の確認がないためcore/openを維持し、解消済みとしない。"
+    },
+    {
+      "id": "F-promise-context",
+      "severity": "core",
+      "status": "open",
+      "aspect": "coherence",
+      "observation": "提供事例では記録室を飛ばせるのに約束の説明はそこだけで、救出後に約束を守ったと礼を言われる。幼なじみは作者設定にとどまる。",
+      "hypothesis": "見逃し経路の戦闘前に相手と約束を提示するb15の報告は、必要な前提の欠落という原因への対応を示す。提示された前提が初見者に届き救出後の礼へつながるか、記録室を経る場合に重複でテンポが崩れないかは未検証。",
+      "evidence": [
+        "E-story-summary",
+        "E-b09-playtest-summary",
+        "E-b15-context-summary",
+        "E-b15-limits-summary"
+      ],
+      "current_status_note": "元のb14観測を保存。事例内では見逃し経路の前提提示が報告されたが、原本の実行証拠と全体確認がないためcore/openを維持。作者設定、ゲームでの提示報告、プレイヤー理解を分ける。"
+    }
+  ],
+  "history": [
+    {
+      "hypothesis_id": "H-damage-tuning",
+      "build": "unspecified-in-case",
+      "outcome": "unknown",
+      "evidence": [
+        "E-prior-tuning-summary"
+      ],
+      "note": "提供された直近2回のうち1回目：通常攻撃のダメージ変更でも最適手順と反応は変化なし、との架空の報告。実在する実行証拠・対象版が未提示なので機械上の実証結果はunknown。H-damage-tuningは作業内容から整理した仮説名であり、作者が明示した仮説ではない。"
+    },
+    {
+      "hypothesis_id": "H-damage-tuning",
+      "build": "unspecified-in-case",
+      "outcome": "unknown",
+      "evidence": [
+        "E-prior-tuning-summary"
+      ],
+      "note": "提供された直近2回のうち2回目も最適手順と反応は変化なしとの報告。停滞2回を保持して同じ数値調整を選ばない。次は数値だけでなく、かばう／攻撃の代償→救出状況→仲間の反応の因果を一戦で変える仮説へ移る。予測は救えた手応えと選択への関心が生まれること。片方が常に自明、相手を気にせず反復、または人間の退屈・好みが改善しなければ反証。変更・成功はまだない。"
+    },
+    {
+      "hypothesis_id": "H-rescue-choice-consequence",
+      "build": "b15",
+      "outcome": "unknown",
+      "evidence": [
+        "E-b15-causality-summary",
+        "E-b15-context-summary",
+        "E-b15-limits-summary"
+      ],
+      "note": "resume.txtで30分・1実験の実施が架空事例として報告された。危険時のかばう／攻撃継続に仲間保護と撃破速度の得失が生じ、直後反応と見逃し経路の物語前提が変わったとの報告を追加。前の数値調整2回の停滞は保存する。本セッションによる実装・実行ではなくsimulationのみなのでoutcomeはunknown。人間の楽しさ、音、残る5戦、記録室を経る経路、序章全体は未検証。次の検証では同じ構造仮説の予測を人間の直接の楽しさ・退屈・継続意欲・比較の好みで確かめ、自明な一択や煩雑さだけなら見直す。"
+    }
+  ],
+  "comparison": null,
+  "decision": "handoff",
+  "next": null,
+  "end_of_budget_rule": "提供報告上の30分で時間上限に到達。予算追加なしのためhandoff、next=null。残り実験枠が2でも新規作業は始めない。機能改善の実証採用・核完成・全体合格・昇格は宣言しない。",
+  "handoff_plan": "再開には別の作業枠が必要。b15を最新の事例内識別子として前記録・証拠・元のcore問題・数値調整2回の停滞・報告実績30分1実験を保持する。新枠で原本と実行環境が利用可能になれば、代表一戦の危険時／平時の両行動と直後反応、戦闘前後、記録室を経る／飛ばす経路を実入力で比較する。対象プレイヤーに作者の説明なしで同条件のb14/b15を遊んでもらい、楽しい・退屈な瞬間、続きを経験したいかと理由、好みと得失を直接尋ね、順序・学習差を記録する。残る5戦と序章全体の単調さ・緩急・重複説明も確認。音は録音や確認手段を得るまでunknown。現在は実行・実装・人間試遊を追加していない。",
+  "previous_record": "iteration-001.json",
+  "comparison_note": "b14とb15の文章報告上は、同じ通常攻撃で結果・反応が不変だった一戦に、行動による結果・反応の差が報告された。これは同条件の実行比較ではないため正式なcomparisonはnull。楽しさの優劣はunknown。利点の予測は救出の手応えと人物への関心、報告上の得失は保護時の撃破1手遅延と攻撃時の負傷。条件・難度・観測時間・学習差を揃えた比較はなく、テンポと操作負荷への損失は未検証。"
+}
