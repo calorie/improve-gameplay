@@ -4,6 +4,7 @@ AIによるゲーム開発で、対象プレイヤーにとっての面白さを
 
 ## 何をするか
 
+- 世界観・ゲーム性・ストーリーを深掘りし、世界の規則、プレイヤーの行為、人物の動機と結果をつなぎます。
 - ゲームが動くこと、理解できること、楽しいことを分けて評価します。
 - 瞬間、一連のプレイ、対象全体で観察し、物語・遊び・UI・表現のつながりを確認します。
 - 最重要の問題から原因仮説を選び、実装前後を比較します。コアが未成立のまま無関係な装飾へ進むことを抑えます。
@@ -40,6 +41,7 @@ $skill-installer を使って、https://github.com/calorie/improve-gameplay の
 
 | 依頼 | AIの進め方 |
 |---|---|
+| 構想・世界観・人物・物語の深掘り | 確定設定と仮説を分け、有力案や因果を検討。設計相談では判断・未決定事項・検証案までに留める |
 | 限定した機能追加・調整 | 狙う体験に結び付け、変更前後と関連場面を確認。既存メモか報告に短く残す |
 | 全体改善・新規ゲーム・コアの修正 | 最重要の原因仮説を選び、実装・比較・採否を反復。短い現在状態と差分を残し、重要な変更・展開・完成の節目で全体を確認 |
 | 明示された機械検証・必須工程・節目での厳密な照合 | 詳細な評価JSONとチェッカーを使う。通常の変更や引き継ぎのたびには新設しない |
@@ -49,6 +51,12 @@ $skill-installer を使って、https://github.com/calorie/improve-gameplay の
 初期設定や評価JSONの入力は利用者に求めず、AIが既存資料を読み、必要な記録を作成・更新します。人間の試遊では、楽しい・退屈な瞬間、続きを遊びたいか、その理由を確認します。AIの予測だけで「人間が楽しめた」とは判定しません。
 
 暗黙の選択は利用環境の判断に依存し、毎ターンの呼び出しを保証するものではありません。確実に指定したい場面では `$improve-gameplay` 等の明示呼び出しも使えます。常駐監視は行わず、ゲームの実行手段は利用環境が提供するものを使います。別のアクティブなセッションやその作業領域は操作対象にしません。
+
+## 世界観・ゲーム性・ストーリーを深掘りする
+
+[設計の深掘り](references/design-depth.md) は、企画や世界・人物・物語と遊びの接続を検討する時に使います。Schellの多角的な設計検討を主軸に、MDAのルール・振る舞い・体験、Wolfの世界構築論、Jenkinsの物語空間を必要に応じて参照します。
+
+既存の改善ループの「把握→選択」を補う資料であり、別の評価・試遊・記録の工程は作りません。通常の数値調整や局所修正には追加の必須工程を設けず、線形作品や世界観だけの相談も依頼範囲に合わせて扱います。参照手法の実績と、本スキル独自の統合手順の検証実績は区別します。
 
 ## 読み込みと記録の負担を抑える
 
@@ -84,6 +92,7 @@ python3 scripts/check_cycle.py evals/iteration-002.json --previous evals/iterati
 | 場所 | 内容 |
 |---|---|
 | [SKILL.md](SKILL.md) | 普段の依頼への適用、通常変更、作業範囲 |
+| [references/design-depth.md](references/design-depth.md) | 世界観・ゲーム性・人物・物語の設計と接続、参考文献 |
 | [references/iteration.md](references/iteration.md) | コア改善の反復、優先順位、予算、引き継ぎ |
 | [references/evaluation.md](references/evaluation.md) | 面白さ・物語・全体の評価、試遊、参考文献 |
 | [references/record-format.md](references/record-format.md) | 評価記録とチェッカーの規則 |
@@ -92,6 +101,7 @@ python3 scripts/check_cycle.py evals/iteration-002.json --previous evals/iterati
 | [tests/test_cycle.py](tests/test_cycle.py) | チェッカーのテスト |
 | [evals/validation.md](evals/validation.md) | 初版の行動検証、結果、限界 |
 | [evals/implicit-usage.md](evals/implicit-usage.md) | 通常作業とコア改善の使い分けの比較検証 |
+| [evals/design-depth.md](evals/design-depth.md) | 設計相談と線形作品・世界観のみ・局所調整の適用確認 |
 | [evals/lean-loop.md](evals/lean-loop.md) | 読み込み・記録の軽量化と、残す評価の確認 |
 
 初版では35件のプログラムテストと架空資料による行動検証を行っています。実ゲームでの楽しさ向上はまだ実証していません。詳しい条件と限界は検証記録を参照してください。

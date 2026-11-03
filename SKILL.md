@@ -1,11 +1,13 @@
 ---
 name: improve-gameplay
-description: Use when creating, implementing, tuning, evaluating, or improving video-game mechanics, levels, narrative, dialogue, tutorials, or in-game UI, including ordinary feature requests without an explicit evaluation request. Especially relevant to dull play, disconnected story and gameplay, or cosmetic work displacing core improvements. Excludes isolated typos, build-only fixes, standalone artwork, and non-game software.
+description: Use when designing or deepening video-game concepts, worldbuilding, characters, story, or mechanics, and when implementing, tuning, evaluating, or improving levels, dialogue, tutorials, or in-game UI. Includes ordinary game feature requests, dull play, disconnected story and gameplay, and cosmetic work displacing core improvements. Excludes isolated typos, build-only fixes, standalone artwork, non-game fiction, and non-game software.
 ---
 
 # Improve gameplay
 
 対象プレイヤーが経験したくなる魅力を磨く。理解・動作の成立と面白さを分け、最重要の問題から直す。通常のゲーム開発依頼にも適用する。
+
+構想・世界観・人物・物語を深掘りする依頼、またはそれらと遊びの因果が未定なら、[設計の深掘り](references/design-depth.md)の該当節を使い、下記の「把握→選択」へ組み込む。実装済みであることを前提にしない。設計・分析だけの依頼では、提案・未解決点・次の検証案までで終え、実装や試遊の実施へ勝手に広げない。
 
 ## 改善ループ
 
@@ -24,6 +26,7 @@ description: Use when creating, implementing, tuning, evaluating, or improving v
 必要な時だけ、以下の該当節を読む。コアの変更という理由だけで全資料や評価JSONを必須にしない。
 
 - [反復と引き継ぎ](references/iteration.md)：長い作業の状態整理、停滞、再開時。
+- [設計の深掘り](references/design-depth.md)：企画、世界観、人物・ストーリー、遊びとの接続が設計対象の時。通常の数値調整・局所修正では追加の必須工程にしない。
 - [評価と試遊](references/evaluation.md)：原因や採否が不明、全体の節目、人間試遊の設計時。
 - [詳細記録](references/record-format.md)：明示された機械検証、既存工程の必須条件、または節目で版・証拠・判定を厳密に照合する必要がある時。通常の前処理にはしない。
 

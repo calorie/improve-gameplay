@@ -1,8 +1,8 @@
 interface:
   display_name: ゲームの面白さを磨く
-  short_description: 普段のゲーム開発で面白さ・物語・全体のつながりを保ち、重要な改善を反復する
-  default_prompt: Use $improve-gameplay to evaluate and improve this game within the
-    agreed work budget.
+  short_description: 世界観・ゲーム性・物語をつなぐ構想と、試遊に基づく改善でゲームの魅力を磨く
+  default_prompt: Use $improve-gameplay to deepen this game’s world, gameplay, and
+    story, or improve the existing experience within the agreed scope and work budget.
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:
