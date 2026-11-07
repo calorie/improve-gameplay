@@ -58,6 +58,12 @@ $skill-installer を使って、https://github.com/calorie/improve-gameplay の
 
 既存の改善ループの「把握→選択」を補う資料であり、別の評価・試遊・記録の工程は作りません。通常の数値調整や局所修正には追加の必須工程を設けず、線形作品や世界観だけの相談も依頼範囲に合わせて扱います。参照手法の実績と、本スキル独自の統合手順の検証実績は区別します。
 
+## 表現制作の具体的な確認
+
+空間・人物の動作・芝居を扱う時は [表現制作の確認](references/scene-review.md) の必要な項目を使います。足の接地、物の受け渡し、支える動作の持続、視線・間・音同期を、実画面と通常入力で確認します。観測と採否は既存の改善ループへ統合し、別の試遊や報告書を増やしません。表現と無関係な変更では追加工程にしません。
+
+この内容は従来の `game-development` から本Skillの参照資料へ統合しました。独立した `game-development` への依存は不要です。制作者の方針はゲーム側で管理し、特定の画風や個人の制作条件を汎用Skillへ持ち込みません。
+
 ## 世界観専門Skillとの共存
 
 歴史・文明・文化・地理・正史の専門Skillがある場合は、その領域の設計・整合性確認を任せます。**プレイヤー体験を改善する依頼**では本Skillが問題選択→実装→試遊→採否を統括し、専門Skillの提案は同じ仮説・証拠・作業記録へ統合します。**世界観だけの設計依頼**では専門Skillを優先し、ゲーム改修や試遊を自動で開始しません。
@@ -102,6 +108,7 @@ python3 scripts/check_cycle.py evals/iteration-002.json --previous evals/iterati
 | [SKILL.md](SKILL.md) | 普段の依頼への適用、通常変更、作業範囲 |
 | [references/design-depth.md](references/design-depth.md) | 世界観・ゲーム性・人物・物語の設計と接続、参考文献 |
 | [references/iteration.md](references/iteration.md) | コア改善の反復、優先順位、予算、引き継ぎ |
+| [references/scene-review.md](references/scene-review.md) | 接地・接触・連続動作・芝居・音同期の具体的な確認 |
 | [references/evaluation.md](references/evaluation.md) | 面白さ・物語・全体の評価、試遊、参考文献 |
 | [references/record-format.md](references/record-format.md) | 評価記録とチェッカーの規則 |
 | [assets/iteration.example.json](assets/iteration.example.json) | 記録形式のサンプル |

@@ -31,6 +31,7 @@ description: Use when designing or deepening video-game concepts, worldbuilding,
 
 - [反復と引き継ぎ](references/iteration.md)：長い作業の状態整理、停滞、再開時。
 - [設計の深掘り](references/design-depth.md)：企画、世界観、人物・ストーリー、遊びとの接続が設計対象の時。通常の数値調整・局所修正では追加の必須工程にしない。
+- [表現制作の確認](references/scene-review.md)：空間・接地・接触・連続動作・芝居・音同期を扱う時。制作体制や画風はゲーム側の方針を参照し、別の専門Skillや評価記録を必須にしない。
 - [評価と試遊](references/evaluation.md)：原因や採否が不明、全体の節目、人間試遊の設計時。
 - [詳細記録](references/record-format.md)：明示された機械検証、既存工程の必須条件、または節目で版・証拠・判定を厳密に照合する必要がある時。通常の前処理にはしない。
 
