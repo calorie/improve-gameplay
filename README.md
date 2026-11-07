@@ -64,6 +64,8 @@ $skill-installer を使って、https://github.com/calorie/improve-gameplay の
 
 専門Skillがなくても、従来どおり [設計の深掘り](references/design-depth.md) を使えます。正史の決定は各ゲームのプロジェクトルールに従い、専門Skillの合格を「人間が面白いと感じた」証拠に換算しません。境界の期待動作は [併用ケース](evals/worldbuilding-coexistence.md) に整理しています。
 
+専門Skillの具体例は、独立リポジトリの [Open-world Worldbuilding Skills Kit](https://github.com/calorie/openworld-worldbuilding-skills) です。[固定版の導入手順](https://github.com/calorie/openworld-worldbuilding-skills/blob/5ac6f5302c8e150636d2af8e170dd7ebad81a71a/docs/game-installation.md) に従ってキット全体を別配置し、入口 `skills/openworld-worldbuilding/SKILL.md` と利用コミットをゲーム側から参照します。入口だけのコピーや専門資料の本リポジトリへの複製はしません。受け渡しは [連携ガイド](https://github.com/calorie/openworld-worldbuilding-skills/blob/5ac6f5302c8e150636d2af8e170dd7ebad81a71a/docs/integration.md) に従い、同じ課題・正史版・記録先に専門所見を返します。導入は任意であり、本Skillの利用に必須ではありません。
+
 ## 読み込みと記録の負担を抑える
 
 既存の会話・作業メモ・観測を再利用し、足りない情報だけを読みます。詳細な参照資料は必要な節だけを開きます。同じ版・影響のない範囲の検証や、同じ内容の定型報告を繰り返しません。
