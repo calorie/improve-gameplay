@@ -12,6 +12,8 @@ AIによるゲーム開発で、対象プレイヤーにとっての面白さを
 
 これは自動でゲームを操作するプログラムではありません。スキルを利用するAIと、その環境にあるエンジン・操作・録画等の道具が実行を担います。通常は「重要な問題を一つ選ぶ→変更→影響確認→採否」を短く回します。Pythonチェッカーは必要な節目で詳細記録を検証する補助で、面白さそのものを数値認定するものではありません。
 
+全体の設計は、短い入口、一つの判断ループ、必要な観点だけを読む参照資料の三層です。入口で設計相談・指定された制作や修正・自由な改善を区別し、代表場面の情報→行為→結果→次の期待から原因を絞ります。技術実装・素材制作・配信の専門手順はプロジェクト側で選び、本Skillへは制作物と確認結果を返します。専門分野ごとの採否や評価台帳は増やしません。
+
 ## 一度インストールし、普段どおり依頼する
 
 このリポジトリは単独のスキルです。入口は [SKILL.md](SKILL.md)。`agents/openai.yaml` の `allow_implicit_invocation: true` により、対応環境がゲーム開発の依頼から自動選択できます。毎回スキル名を指定したり、評価手順をプロンプトに書いたりする必要はありません。
@@ -58,11 +60,13 @@ $skill-installer を使って、https://github.com/calorie/improve-gameplay の
 
 既存の改善ループの「把握→選択」を補う資料であり、別の評価・試遊・記録の工程は作りません。通常の数値調整や局所修正には追加の必須工程を設けず、線形作品や世界観だけの相談も依頼範囲に合わせて扱います。参照手法の実績と、本スキル独自の統合手順の検証実績は区別します。
 
-## 表現制作の具体的な確認
+## 操作・情報・表現を体験へつなぐ
 
-空間・人物の動作・芝居を扱う時は [表現制作の確認](references/scene-review.md) の必要な項目を使います。足の接地、物の受け渡し、支える動作の持続、視線・間・音同期を、実画面と通常入力で確認します。観測と採否は既存の改善ループへ統合し、別の試遊や報告書を増やしません。表現と無関係な変更では追加工程にしません。
+[操作・情報・表現の確認](references/scene-review.md) は、必要な行為へ到達できるか、結果が伝わるか、動きや芝居が成立するかを扱います。入力方式とフォーカス、判読性や代替手掛かり、接地・接触・音同期、素材の実ゲームへの取込を、変更に関係する範囲だけ確認します。観測と採否は既存の改善ループへ統合します。
 
 この内容は従来の `game-development` から本Skillの参照資料へ統合しました。独立した `game-development` への依存は不要です。制作者の方針はゲーム側で管理し、特定の画風や個人の制作条件を汎用Skillへ持ち込みません。
+
+ルールや進行を変える時は、[設計の深掘り](references/design-depth.md)で数値条件、学習、資源の流れ、反復後の状態も追います。毎回の全項目チェックや固定のFPS・待ち時間・勝率を合格条件にはしません。外部Skillとの比較と今回の検証範囲は [全体設計の見直し](evals/experience-design.md) に記載します。
 
 ## 世界観専門Skillとの共存
 
@@ -108,7 +112,7 @@ python3 scripts/check_cycle.py evals/iteration-002.json --previous evals/iterati
 | [SKILL.md](SKILL.md) | 普段の依頼への適用、通常変更、作業範囲 |
 | [references/design-depth.md](references/design-depth.md) | 世界観・ゲーム性・人物・物語の設計と接続、参考文献 |
 | [references/iteration.md](references/iteration.md) | コア改善の反復、優先順位、予算、引き継ぎ |
-| [references/scene-review.md](references/scene-review.md) | 接地・接触・連続動作・芝居・音同期の具体的な確認 |
+| [references/scene-review.md](references/scene-review.md) | 入力・情報・知覚・動作・芝居・素材取込の具体的な確認 |
 | [references/evaluation.md](references/evaluation.md) | 面白さ・物語・全体の評価、試遊、参考文献 |
 | [references/record-format.md](references/record-format.md) | 評価記録とチェッカーの規則 |
 | [assets/iteration.example.json](assets/iteration.example.json) | 記録形式のサンプル |
