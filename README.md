@@ -58,6 +58,20 @@ $skill-installer を使って、https://github.com/calorie/improve-gameplay の
 
 既存の改善ループの「把握→選択」を補う資料であり、別の評価・試遊・記録の工程は作りません。通常の数値調整や局所修正には追加の必須工程を設けず、線形作品や世界観だけの相談も依頼範囲に合わせて扱います。参照手法の実績と、本スキル独自の統合手順の検証実績は区別します。
 
+## 表現制作の具体的な確認
+
+空間・人物の動作・芝居を扱う時は [表現制作の確認](references/scene-review.md) の必要な項目を使います。足の接地、物の受け渡し、支える動作の持続、視線・間・音同期を、実画面と通常入力で確認します。観測と採否は既存の改善ループへ統合し、別の試遊や報告書を増やしません。表現と無関係な変更では追加工程にしません。
+
+この内容は従来の `game-development` から本Skillの参照資料へ統合しました。独立した `game-development` への依存は不要です。制作者の方針はゲーム側で管理し、特定の画風や個人の制作条件を汎用Skillへ持ち込みません。
+
+## 世界観専門Skillとの共存
+
+歴史・文明・文化・地理・正史の専門Skillがある場合は、その領域の設計・整合性確認を任せます。**プレイヤー体験を改善する依頼**では本Skillが問題選択→実装→試遊→採否を統括し、専門Skillの提案は同じ仮説・証拠・作業記録へ統合します。**世界観だけの設計依頼**では専門Skillを優先し、ゲーム改修や試遊を自動で開始しません。
+
+専門Skillがなくても、従来どおり [設計の深掘り](references/design-depth.md) を使えます。正史の決定は各ゲームのプロジェクトルールに従い、専門Skillの合格を「人間が面白いと感じた」証拠に換算しません。境界の期待動作は [併用ケース](evals/worldbuilding-coexistence.md) に整理しています。
+
+専門Skillの具体例は、独立リポジトリで配布する [Open-world Worldbuilding Skills Kit](https://github.com/calorie/openworld-worldbuilding-skills) です。ゲーム作業では環境のSkill一覧からインストール済みの `openworld-worldbuilding` を選び、公開された実際の入口と同梱資料を読みます。開発checkoutや公開元の本文を導入版として代用しません。[導入手順](https://github.com/calorie/openworld-worldbuilding-skills/blob/40a9aa2eb857cca698b260d7184a5c896cf87db8/docs/game-installation.md) に沿って導入した配布版を管理し、同じ課題・正史版・記録先に専門所見を返します。導入は任意で、未導入なら未参照と明記し、本Skillの既存手順で依頼範囲内の作業を進めます。自動導入・更新や専門資料の複製は行いません。
+
 ## 読み込みと記録の負担を抑える
 
 既存の会話・作業メモ・観測を再利用し、足りない情報だけを読みます。詳細な参照資料は必要な節だけを開きます。同じ版・影響のない範囲の検証や、同じ内容の定型報告を繰り返しません。
@@ -94,6 +108,7 @@ python3 scripts/check_cycle.py evals/iteration-002.json --previous evals/iterati
 | [SKILL.md](SKILL.md) | 普段の依頼への適用、通常変更、作業範囲 |
 | [references/design-depth.md](references/design-depth.md) | 世界観・ゲーム性・人物・物語の設計と接続、参考文献 |
 | [references/iteration.md](references/iteration.md) | コア改善の反復、優先順位、予算、引き継ぎ |
+| [references/scene-review.md](references/scene-review.md) | 接地・接触・連続動作・芝居・音同期の具体的な確認 |
 | [references/evaluation.md](references/evaluation.md) | 面白さ・物語・全体の評価、試遊、参考文献 |
 | [references/record-format.md](references/record-format.md) | 評価記録とチェッカーの規則 |
 | [assets/iteration.example.json](assets/iteration.example.json) | 記録形式のサンプル |
